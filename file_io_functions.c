@@ -2,9 +2,9 @@
 
 /**
  * get_history_shell - gets the history
- * @info: parameter struct
+ * @info: structure that contains arguments of the program
  *
- * Return: allocated string containg history file
+ * Return: string history
  */
 
 char *get_history_shell(info_t *info)
@@ -25,10 +25,10 @@ char *get_history_shell(info_t *info)
 }
 
 /**
- * write_history - creates a file, or appends to an existing file
- * @info: the parameter struct
+ * write_history_shell - creates a file, or appends to an existing file
+ * @info: structure that contains arguemtns of the program
  *
- * Return: 1 on success, else -1
+ * Return: 1 or -1
  */
 int write_history_shell(info_t *info)
 {
@@ -54,8 +54,8 @@ int write_history_shell(info_t *info)
 }
 
 /**
- * read_history - reads history from file
- * @info: the parameter struct
+ * read_history_shell - reads history from file
+ * @info: structure that contains arguments of the program
  *
  * Return: histcount on success, 0 otherwise
  */
@@ -104,6 +104,9 @@ int read_history_shell(info_t *info)
 
 /**
  * build_history_list_shell - adds entry to a history linked list
+ * @info: structure that contains arguments of the program
+ * @buf: pointer that refer the buffer
+ * @linecount: variable that has linecount
  *
  * Return: Always 0
  */
@@ -121,8 +124,8 @@ int build_history_list_shell(info_t *info, char *buf, int linecount)
 }
 
 /**
- * renumber_history - renumbers the history linked list after changes
- * @info: Structure containing potential arguments. Used to maintain
+ * renumber_history_shell - renumbers the history list after alterations
+ * @info: structure containing arguments of the program
  *
  * Return: the new histcount
  */

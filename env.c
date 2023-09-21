@@ -1,7 +1,9 @@
 #include "shell.h"
 
 /**
- * _myenv - prints the current environment
+ * _myenv_shell - prints the current environment
+ * @info: structure that contains some arguments of programs in the shell
+ *
  * Return: Always 0
  */
 int _myenv_shell(info_t *info)
@@ -11,7 +13,10 @@ int _myenv_shell(info_t *info)
 }
 
 /**
- * _getenv - gets the value of an environ variable
+ * _getenv_shell - gets the value of an environ variable
+ * @info: structure that contains some arguments of the program
+ * @name: name of env
+ *
  * Return: the value
  */
 char *_getenv_shell(info_t *info, const char *name)
@@ -30,8 +35,10 @@ char *_getenv_shell(info_t *info, const char *name)
 }
 
 /**
- * _mysetenv - Initialize a new environment variable,
- *  Return: Always 0
+ * _mysetenv_shell - Initialize a new environment variable,
+ * @info: structure that contains arguments of the program
+ *
+ *  Return: Always 0 or 1
  */
 int _mysetenv_shell(info_t *info)
 {
@@ -46,7 +53,9 @@ int _mysetenv_shell(info_t *info)
 }
 
 /**
- * _myunsetenv - Remove an environment variable
+ * _myunsetenv_shell - Remove an environment variable
+ * @info: structure that contains arguemnts of the program
+ *
  *  Return: Always 0
  */
 int _myunsetenv_shell(info_t *info)
@@ -65,7 +74,9 @@ int _myunsetenv_shell(info_t *info)
 }
 
 /**
- * populate_env_list - populates env linked list
+ * populate_env_list_shell - populates env linked list
+ * @info: structure that contains arguments of the program
+ *
  * Return: Always 0
  */
 int populate_env_list_shell(info_t *info)

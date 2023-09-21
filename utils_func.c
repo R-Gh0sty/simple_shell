@@ -2,6 +2,8 @@
 
 /**
  * interactive - returns true if shell is interactive mode
+ * @info: structure containing arguments of program
+ *
  * Return: 1 if interactive mode, 0 otherwise
  */
 int interactive(info_t *info)
@@ -11,6 +13,9 @@ int interactive(info_t *info)
 
 /**
  * is_delim - checks if character is a delimeter
+ * @c: variable has the character
+ * @delim: variable that stores the delim
+ *
  * Return: 1 if true, 0 if false
  */
 int is_delim(char c, char *delim)
@@ -23,6 +28,8 @@ int is_delim(char c, char *delim)
 
 /**
  *_isalpha - checks for alphabetic character
+ * @c: variable that stores c
+ *
  *Return: 1 if c is alphabetic, 0 otherwise
  */
 

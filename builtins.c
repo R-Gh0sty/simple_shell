@@ -2,6 +2,9 @@
 
 /**
  * _myexit - exits the shell
+ * @info: structure containing arguments
+ *
+ *  Return: returns 1 or -2
  */
 int _myexit(info_t *info)
 {
@@ -77,6 +80,8 @@ int _mycd(info_t *info)
 
 /**
  * _myhelp - changes the current directory of the process
+ * @info: structure has some arguments
+ *
  *  Return: Always 0
  */
 int _myhelp(info_t *info)

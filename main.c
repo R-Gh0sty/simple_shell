@@ -2,6 +2,8 @@
 
 /**
  * main - entry point
+ * @ac: containing a number
+ * @av: arguments
  *
  * Return: 0 on success, 1 on error
  */

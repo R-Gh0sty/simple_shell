@@ -2,6 +2,9 @@
 
 /**
  * input_buf - buffers chained commands
+ * @info: structure that contains arguments of the program
+ * @buf: double pointer refer to buffer
+ * @len: pointer that stores address of length
  *
  * Return: bytes read
  */

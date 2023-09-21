@@ -2,6 +2,8 @@
 
 /**
  *  shell_loop - main shell func
+ *  @info: structure that contains arguments of the program
+ *  @av: double pointer contains data of av
  *
  * Return: 0 on success, 1 on error, or error code
  */
